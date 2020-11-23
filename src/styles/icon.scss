@@ -1,0 +1,205 @@
+// 定义font-face，指定名为"my-iconfont"的字体，并指定在哪里可以找到它的URL
+@font-face {
+  font-family: 'my-iconfont';
+  src: url('iconfont/iconfont.woff') format('woff'), /* chrome, firefox */
+       url('iconfont/iconfont.ttf') format('truetype'); /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  font-weight: normal;
+  font-style: normal;
+}
+
+// 以my-icon-开头，或者包含my-icon-的类
+[class^="icon"], [class*=" icon"] {
+  font-family: "my-iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.iconrijijilu:before {
+  content: "\e644";
+}
+
+.iconzhihangriji:before {
+  content: "\e643";
+}
+
+.iconxiangqing:before {
+  content: "\e642";
+}
+
+.iconcaozuo-shanchu:before {
+  content: "\e641";
+}
+
+.iconshangchuan:before {
+  content: "\e63f";
+}
+
+.iconchushihuabianliang:before {
+  content: "\e640";
+}
+
+.iconproject:before {
+  content: "\e63e";
+}
+
+.icontask:before {
+  content: "\e63c";
+}
+
+.iconHIVE:before {
+  content: "\e63d";
+}
+
+.iconSpark:before {
+  content: "\e63a";
+}
+
+.iconSparksql:before {
+  content: "\e639";
+}
+
+.iconShell:before {
+  content: "\e638";
+}
+
+.iconsql:before {
+  content: "\e637";
+}
+
+.iconDatax:before {
+  content: "\e636";
+}
+
+.iconbaocun:before {
+  content: "\e634";
+}
+
+.iconbofang:before {
+  content: "\e632";
+}
+
+.iconbianjiqi-shezhi:before {
+  content: "\e631";
+}
+
+.iconshuaxin:before {
+  content: "\e630";
+}
+
+.iconbianjiqi-quanping:before {
+  content: "\e62f";
+}
+
+.iconxiazai:before {
+  content: "\e62e";
+}
+
+.iconshezhiguanlian:before {
+  content: "\e62d";
+}
+
+.iconshubiaodianxuan:before {
+  content: "\e62c";
+}
+
+.iconbianjiqi-quxiao:before {
+  content: "\e62b";
+}
+
+.iconquanpingshouqi:before {
+  content: "\e62a";
+}
+
+.icondanchuang-quanping:before {
+  content: "\e628";
+}
+
+.iconzanting:before {
+  content: "\e627";
+}
+
+.iconfuzhi:before {
+  content: "\e626";
+}
+
+.iconshuoming:before {
+  content: "\e625";
+}
+
+.iconqiyong:before {
+  content: "\e624";
+}
+
+.iconxinjian-xinzeng:before {
+  content: "\e623";
+}
+
+.iconqiyong-zhihang:before {
+  content: "\e622";
+}
+
+.iconzuoyeweihu:before {
+  content: "\e620";
+}
+
+.iconrenwuweihu:before {
+  content: "\e61f";
+}
+
+.iconDAGtu:before {
+  content: "\e61e";
+}
+
+.iconbianji:before {
+  content: "\e61d";
+}
+
+.iconshouqi1:before {
+  content: "\e61c";
+}
+
+.iconxiala:before {
+  content: "\e61b";
+}
+
+.iconxiangmupeizhi:before {
+  content: "\e61a";
+}
+
+.iconzuoyepeizhi:before {
+  content: "\e619";
+}
+
+.iconzhihangzhiliangjiankong:before {
+  content: "\e618";
+}
+
+.iconshanchu:before {
+  content: "\e615";
+}
+
+.iconshouqi:before {
+  content: "\e614";
+}
+
+.iconzhankai:before {
+  content: "\e613";
+}
+
+.iconziyuanguanli:before {
+  content: "\e612";
+}
+
+.iconxitongguanli:before {
+  content: "\e611";
+}
+
+.iconcaijijiankong:before {
+  content: "\e60e";
+}
+
+.iconrenwupeizhi:before {
+  content: "\e60d";
+}

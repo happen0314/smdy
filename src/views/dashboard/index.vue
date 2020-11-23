@@ -1,18 +1,33 @@
 <template>
   <div class="dashboard-container">
-    <div class="dashboard-text">name: {{ name }}</div>
+   <div>
+     <div class="smdy-title">iconfont:</div>
+     <div>
+       普通方法引入的iconfont：
+       <i class="normal-iconfont iconfont iconrijijilu"/>
+     </div>
+     <div>
+       仿ele方法引入的iconfont：
+       <i class="normal-iconfont iconrijijilu" />
+     </div>
+     <div>
+       <div class="smdy-title">vuex-mapstate:</div>
+        <div>{{name}}</div>
+     </div>
+   </div>
   </div>
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
+import { mapGetters,mapState } from 'vuex'
 
 export default {
   name: 'Dashboard',
   computed: {
     ...mapGetters([
       'name'
-    ])
+    ]),
+    ...mapState('user',['name'])
   }
 }
 </script>
@@ -22,9 +37,12 @@ export default {
   &-container {
     margin: 30px;
   }
-  &-text {
-    font-size: 30px;
-    line-height: 46px;
-  }
+}
+.smdy-title {
+  font-size: 28px;
+}
+
+.normal-iconfont {
+  font-size: 24px;
 }
 </style>
