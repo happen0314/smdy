@@ -7,17 +7,10 @@ import 'element-ui/lib/theme-chalk/index.css'
 import locale from 'element-ui/lib/locale/lang/en' // lang i18n
 
 import '@/styles/index.scss' // global css
-// 引入iconfont
-import '@/assets/iconfont/iconfont.css'
-// 引入仿ele-iconfont
-import '@/styles/icon.scss'
-
 
 import App from './App'
 import store from './store'
 import router from './router'
-
-
 
 import '@/icons' // icon
 import '@/permission' // permission control
@@ -25,6 +18,15 @@ if (process.env.NODE_ENV === 'production') {
   const { mockXHR } = require('../mock')
   mockXHR()
 }
+
+// 课程代码-----------------------------------------------------------------------------------------------------------
+// 引入iconfont
+import '@/assets/iconfont/iconfont.css'
+// 引入仿ele-iconfont
+import '@/styles/icon.scss'
+import EventBus from '@/utils/eventBus'
+Vue.prototype.$eventBus = new EventBus()
+// ------------------------------------------------------------------------------------------------------------------
 
 // set ElementUI lang to EN
 Vue.use(ElementUI, { locale })
