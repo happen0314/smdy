@@ -25,7 +25,9 @@ import '@/assets/iconfont/iconfont.css'
 // 引入仿ele-iconfont
 import '@/styles/icon.scss'
 import EventBus from '@/utils/eventBus'
+import creat from '@/utils/creat'
 Vue.prototype.$eventBus = new EventBus()
+Vue.prototype.$creat = creat
 // ------------------------------------------------------------------------------------------------------------------
 
 // set ElementUI lang to EN
